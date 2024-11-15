@@ -1,0 +1,3 @@
+module GO-CRM-API-SHOPDEV
+
+go 1.23.3
