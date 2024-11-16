@@ -1,8 +1,10 @@
 package main
 
-import "fmt"
+import "GO-CRM-API-SHOPDEV/internal/routers"
 
 func main() {
 
-	fmt.Println("staring")
+	r := routers.NewServer()
+	r.Run()
+
 }
