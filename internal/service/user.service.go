@@ -6,8 +6,7 @@ type UserService struct {
 	userRepo *repo.UserRepo
 }
 
-func NewUserSerivce() *UserService {
-
+func NewUserService() *UserService {
 	return &UserService{
 		userRepo: repo.NewUserRepo(),
 	}
@@ -15,5 +14,5 @@ func NewUserSerivce() *UserService {
 
 func (us *UserService) GetInfoUseService() string {
 
-	return us.userRepo.GetInFoUser();
+	return us.userRepo.GetInFoUser()
 }

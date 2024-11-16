@@ -2,8 +2,8 @@ package controller
 
 import (
 	"GO-CRM-API-SHOPDEV/internal/service"
+	"GO-CRM-API-SHOPDEV/pkg/response"
 	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
 type UserController struct {
@@ -13,14 +13,12 @@ type UserController struct {
 func NewUserController() *UserController {
 	return &UserController{
 
-		userService: service.NewUserSerivce(),
+		userService: service.NewUserService(),
 	}
 }
 
 // uc  user contr0ller
 func (uc *UserController) GetUserById(c *gin.Context) {
-
-	c.JSON(http.StatusOK, gin.H{
-		"message": uc.userService.GetInfoUseService(),
-	})
+	response.ErrorResponse(c, 203, "")
+	//response.SuccessResponse(c, 201, uc.userService.GetInfoUseService())
 }
