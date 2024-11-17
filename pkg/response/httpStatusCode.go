@@ -1,7 +1,7 @@
 package response
 
 const (
-	ErrCodeSuccess      = 201 // succes
+	ErrCodeSuccess      = 201 // success
 	ErrCodeParamInvalid = 203 // email invalid
 
 )
