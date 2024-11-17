@@ -4,6 +4,7 @@ import (
 
 	//c = controller
 	c "GO-CRM-API-SHOPDEV/internal/controller"
+	"GO-CRM-API-SHOPDEV/internal/middlewares"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -11,6 +12,8 @@ import (
 func NewServer() *gin.Engine {
 
 	r := gin.Default()
+	// Add middleware ~~
+	r.Use(middlewares.AuthenMiddleware())
 
 	v1 := r.Group("/v1/2024")
 	{

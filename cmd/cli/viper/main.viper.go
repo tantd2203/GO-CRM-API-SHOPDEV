@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/spf13/viper"
+	v "github.com/spf13/viper"
 )
 
 type Config struct {
@@ -20,7 +20,7 @@ type Config struct {
 
 func main() {
 	// Khởi tạo Viper
-	viper := viper.New()
+	viper := v.New()
 	viper.AddConfigPath("./config/") // Đường dẫn tới thư mục chứa file config
 	viper.SetConfigName("local")     // Tên file config (không bao gồm phần mở rộng)
 	viper.SetConfigType("yaml")      // Loại file config
