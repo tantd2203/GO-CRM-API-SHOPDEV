@@ -19,10 +19,6 @@ func checkErrorPanic(err error, errString string) {
 }
 func InitMysql() {
 	m := global.Config.Mysql
-
-	fmt.Printf("Username: %s, Password: %s, Host: %s, Port: %d, Dbname: %s\n",
-		m.Username, m.Password, m.Host, m.Port, m.Dbname)
-
 	dsn := "%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=True&loc=Local"
 
 	var s = fmt.Sprintf(dsn, m.Username, m.Password, m.Host, m.Port, m.Dbname)

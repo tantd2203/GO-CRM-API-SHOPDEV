@@ -21,3 +21,7 @@
 {"level":"INFO","time":"2024-11-18T21:22:54.416+0700","caller":"initalize/mysql.go:35","msg":"InitMysql initialization success"}
 {"level":"INFO","time":"2024-11-18T21:24:10.373+0700","caller":"initalize/run.go:16","msg":"Config Log ok !","ok":"success"}
 {"level":"INFO","time":"2024-11-18T21:24:10.391+0700","caller":"initalize/mysql.go:35","msg":"InitMysql initialization success"}
+{"level":"INFO","time":"2024-11-18T21:25:16.841+0700","caller":"initalize/run.go:16","msg":"Config Log ok !","ok":"success"}
+{"level":"INFO","time":"2024-11-18T21:25:16.859+0700","caller":"initalize/mysql.go:35","msg":"InitMysql initialization success"}
+{"level":"INFO","time":"2024-11-19T14:28:07.850+0700","caller":"initalize/run.go:16","msg":"Config Log ok !","ok":"success"}
+{"level":"ERROR","time":"2024-11-19T14:28:07.875+0700","caller":"initalize/mysql.go:16","msg":"InitMysql initialization error","error":"dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.","stacktrace":"GO-CRM-API-SHOPDEV/internal/initalize.checkErrorPanic\n\tC:/Users/trand/GolandProjects/GO-CRM-API-SHOPDEV/internal/initalize/mysql.go:16\nGO-CRM-API-SHOPDEV/internal/initalize.InitMysql\n\tC:/Users/trand/GolandProjects/GO-CRM-API-SHOPDEV/internal/initalize/mysql.go:33\nGO-CRM-API-SHOPDEV/internal/initalize.Run\n\tC:/Users/trand/GolandProjects/GO-CRM-API-SHOPDEV/internal/initalize/run.go:17\nmain.main\n\tC:/Users/trand/GolandProjects/GO-CRM-API-SHOPDEV/cmd/server/main.go:9\nruntime.main\n\tC:/Program Files/Go/src/runtime/proc.go:272"}

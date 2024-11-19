@@ -18,6 +18,12 @@ logger:
   max_age: 28
   compress: true
 
+redis:
+  addr: "localhost:6379"
+  password:
+  db: 0
+  PoolSize: 10
+
 
 
 #  maxIdleConns : số lượng kết nối max trong 1 khoản time
