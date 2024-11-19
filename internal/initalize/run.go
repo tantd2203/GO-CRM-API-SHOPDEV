@@ -14,7 +14,7 @@ func Run() {
 	InitLogger()
 
 	global.Logger.Info("Config Log ok !", zap.String("ok", "success"))
-	InitMysql()
+	//	InitMysql()
 
 	r := InitRouter()
 
